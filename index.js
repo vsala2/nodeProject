@@ -55,7 +55,7 @@ const server = http.createServer(function (req, res) {
   }
   else{
     
-    res.end(" 404: Nothing is Here");
+    res.end("404: Nothing is Here");
   }
 });
 

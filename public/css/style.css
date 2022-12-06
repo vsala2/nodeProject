@@ -1,0 +1,408 @@
+
+.container{
+    height:100vh;
+    width:100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "aboutMeContent aboutMeContent aboutMeContent aboutMeContent"
+    "education education education education"
+    "experience experience experience experience"
+    "project project project project"
+    "blogs blogs blogs blogs"
+    "techStack techStack techStack techStack"
+    "footer footer footer footer";
+    /* gap: 0.2px; */
+
+}
+
+.title{
+    font-size: 2em;
+}
+
+nav{
+    background-color: #d90429;
+    display: flex;
+
+    grid-area: nav;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.navright{
+    float: right;
+    padding: 10px;
+}
+
+.navleft{
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+}
+
+.navright a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 15px;
+}
+
+main{
+    background-color: white;
+    grid-area: main;
+}
+
+.mypic img{
+    max-height: 300px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.info{
+    color: black;
+    padding:50px;
+}
+
+.info p{
+    font-size: 1.5em;
+}
+
+
+#aboutMeContent{
+    background-color: #d90429;
+    color: white;
+    padding: 50px;
+    padding-left: 100px;
+    text-align: left;
+    text-align: justify;
+    grid-area: aboutMeContent;
+
+}
+
+#aboutMeContent p{
+    font-size: 1.5em;
+}
+
+.education{
+    background-color: white;
+    color: black;
+    padding: 50px;
+    padding-left: 100px;
+    grid-area: education;
+}
+
+.education h1{
+    text-align: left;
+}
+
+details{
+    text-align: left;
+}
+
+summary{
+    font-weight: bold;
+}
+
+.education p{
+    font-size: 1.5em;
+}
+
+.experience{
+    padding:50px;
+    padding-left: 100px;
+    background-color: #d90429;
+    color:white;
+    grid-area: experience;
+}
+
+.experience h1{
+    text-align: left;
+}
+
+.exp td{
+    font-size: 1.5em;
+
+}
+
+.project{
+    background-color: white;
+    color: black;
+    padding: 50px;
+    grid-area: project;
+}
+
+.project h1{
+    text-align: left;
+}
+
+.projectsection{
+    display: flex;
+}
+
+.project img{
+    height: 300px;
+    float: left;
+}
+#prodes{
+    float: right;
+    text-align: left;
+    font-size:1.5em;
+    padding: 15px;
+}
+
+
+
+.blogs{
+    background-color: #d90429;
+    display: flex;
+    grid-area: blogs;
+    padding: 20px;
+    gap: 1em;
+}
+
+
+
+#article1{
+    display: block;
+}
+
+#article1 img{
+    height: 320px;
+}
+
+#article1 a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+#article2{
+    display: block;
+}
+
+#article2 img{
+    height: 320px;
+}
+
+#article2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+#article3{
+    display: block;
+}
+
+#article3 img{
+    height: 320px;
+}
+
+#article3 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.title1{
+    color: black;
+    font-size: 2em;
+    padding-left: 50px;
+}
+
+.tech{
+    display: flex;
+
+}
+
+.tech img{
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+footer{
+    background-color: #d90429;
+    grid-area: footer;
+}
+
+footer h3{
+    padding-right: 150px;
+    color: white;
+}
+
+.section{
+    display: flex;
+}
+
+#section1{
+    padding: 20px;
+}
+
+#section1 ul li a{
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+#section1 ul{
+    list-style: none;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#section2{
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+#section2 button{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#section3 iframe{
+    height: 300px;
+    width: 300px;
+    padding-right: 90px;
+    padding-top: 50px;
+}
+
+.followus{
+    color: white;
+    font-size: 1.5em;
+    margin-left: -120px;
+}
+
+#top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .container{
+        width:100%;
+        display: block;
+        grid-template-rows: 0.5fr 1.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "aboutMeContent"
+        "education"
+        "experience"
+        "project"
+        "blogs"
+        "techStack"
+        "footer";
+    }
+
+    .title{
+        font-size: 1.5em;
+    }
+
+    .mypic img{
+        height: 200px;
+        font-size: 1em;
+
+    }
+
+    nav{
+        font-size: 1em;
+    }
+
+    .exp td{
+        font-size: 1.3em;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .project{
+        height: 870px;
+    }
+
+    .projectsection{
+        display: block;
+    }
+    
+    #projectimg{
+        height: 212px;
+        padding: 20px;
+    }
+    #prodes{
+        font-size: 1.3em;
+        text-align: justify;
+    }
+
+    #blogs{
+        display: block;
+    }
+
+    #article1 img{
+        height: 250px;
+    }
+
+    #article2 img{
+        height: 300px;
+    }
+
+    #article3 img{
+        height: 300px;
+    }
+
+    .tech{
+        display: block;
+
+    }
+
+    .tech img{
+        height: 200px;
+    }
+
+    .section{
+        display: block;
+    }
+
+    footer .title{
+        padding-left: 150px;
+    }
+
+    #section3 iframe{
+        padding: 80px;
+    }
+
+    .followus{
+        margin-left: 20px;
+    }
+
+
+
+    
+
+
+
+}

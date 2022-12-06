@@ -1,0 +1,59 @@
+{"pizzeria": [{
+    "id": 1,
+    "name": "Rubirosa Pizza",
+    "description": "Rubirosa is a classic New York joint beloved by locals and tourists alike, for good reason. They have perfected the art of marinara sauce, so much so, that I’d eat it by the spoonful if it were on the menu. The reason I think Rubirosa is the BEST pizza in New York City is simple — I am excited by the simplest pizza known to man.",
+    "typepizza": "Whole pies only, one pizza is large enough to split between two.",
+    "address": "235 Mulberry St, New York, NY 10012",
+    "prize": "Average pizza: $20",
+    "openinghours": "Mon–Wed, Sun 11:30am–11pm; Thu-Sat 11:30am-midnight",
+    "weblink": "www.rubirosanyc.com"
+
+},
+{
+    "id": 2,
+    "name": "Roberta’s Pizza",
+    "description": "If you’re in search of the best pizza in New York City run, don’t walk, to Roberta’s. Roberta, I wave my white flag eagerly at your feet. You have made a woman out of me with your perfectly charred pizza and delectable marinara sauce and I will never be the same. I am weak in the knees but I assure you I will gladly hobble over every chance I get. The wood fired pizza at Roberta’s is made in an oven that churns out thousands of pies a week.",
+    "typepizza": "Wood oven, personal pies only (we each ordered one and didn’t have left overs).",
+    "address": "261 Moore St, Brooklyn, 11206",
+    "prize": "Average pizza: $17",
+    "openinghours": "Mon–Fri 11am–midnight; Sat and Sun 10am–midnight",
+    "weblink": "www.robertaspizza.com"
+},
+{
+    "id": 3,
+    "name": "Lucali Pizza",
+    "description": "Lucali is one of the most popular pizzerias in New York City and has the long lines to prove it. The restaurant doesn’t accept reservations, which means the only way to get a pie is by waiting in line (usually for 1+ hours). Serving some of the best thin crust pizzas in New York City, guests are welcome to bring their own beer and wine to cap off the meal properly. But take note, this is a cash-only establishment, so come prepared.",
+    "typepizza": "Pies and calzones, adorned with milky, elastic mozzarella and simple toppings like chewy rounds of pepperoni or slivers of artichoke.",
+    "address": "575 Henry St, Brooklyn, NY 11231",
+    "prize": "Average pizza: $24. Cash only",
+    "openinghours": "Mon, Wed–Sun 6–9:30pm",
+    "weblink": "www.lucali.com"
+},
+{
+    "id": 4,
+    "name": "Lombardi's Coal Oven Pizza",
+    "description": "Lombardi’s is not the best coal oven pizza joint in town, but it is the oldest, and its charred pies do not disappoint. It’s often called the first pizzeria in NYC, and for this reason is regularly mobbed by tourists and pizza fanatics alike. The shop’s second location in Chelsea — not as good — closed during the pandemic. The little-praised clam pie is actually excellent, and compares well with Pepe’s in New Haven.",
+    "typepizza": "Coal-oven pizza, whole pies only, “personal” size. You can split one pie between two people if you’re not too hungry. If you’re really hungry, I suggest ordering a pie per person.",
+    "address": "32 Spring St, New York, NY 10012",
+    "openinghours": "Sunday to Thursday: 12:00 PM to 10:00 PM, Friday to Saturday: 12:00 PM to 12:00 AM",
+    "weblink": "www.firstpizza.com"
+},
+{
+    "id": 5,
+    "name": "Joe’s Pizza (Iconic NYC pizza by the slice)",
+    "description": "At this classic slice joint, the crust is just stretchy-chewy enough for folding, and the slightly sweet sauce is overlaid with a perfect web of drippy cheese. Two caveats: Slices are burn-your-tongue fresh, and tables are limited, so takeout may be your best bet.",
+    "typepizza": "Classic New York City slice.",
+    "address": "7 Carmine St, New York, 10014-44",
+    "prize": "Average large pizza: $22. AmEx, MC, V",
+    "openinghours": "Mon-Thu, Sun 10am–4am; Fri, Sat 10am-5am",
+    "weblink": "www.joespizzanyc.com"
+},
+{
+    "id": 6,
+    "name": "Di Fara",
+    "description": "Opened in 1965 to Italian transplant Domenico (Dom) De Marco, Di Fara has been a labor of love for over 50 years. Working 7 days a week for decades, De Marco had an uncompromising and relentless pursuit to create the best pies for his customer. After his passing in March of 2022, New Yorkers from all over flooded the pizzerias social media pages with words of support and love. The significance Di Fara has on the neighborhood and New York City as a whole is palpable.",
+    "address": "1424 Ave J, Brooklyn NY 11230 & 108 South St, New York NY 10038",
+    "prize": "Average whole pizza: $32. Cash only",
+    "openinghours": "Tue–Sat noon–8pm, Sun 1pm-8pm",
+    "weblink": "www.difarany.com"
+}]}

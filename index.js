@@ -4,7 +4,7 @@ const http = require('http');
 
 const fs = require('fs');
 
-const PORT = 80;
+const PORT = 9595;
 
 const { MongoClient } = require('mongodb');
 
@@ -60,4 +60,4 @@ const server = http.createServer(function (req, res) {
 });
 
 server.listen(PORT);
-console.log('Server running at {PORT}');
+console.log('Server running at {{PORT}}');

@@ -10,24 +10,18 @@ const { MongoClient } = require('mongodb');
 
 const server = http.createServer(function (req, res) {
   console.log("Request for demo file received.", req.url);
-  
-   const headers = {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
-      "Access-Control-Max-Age": 2592000, // 30 days
-      /** add other headers as per requirement */
-    };
+ 
 
   if (req.url === "/") {
     fs.readFile("./public/index.html", "UTF-8", function (err, html) {
-      res.writeHead(200, { "Content-Type": "text/html" }, headers);
+      res.writeHead(200, { "Content-Type": "text/html" });
       res.end(html);
     });
   } 
   else if (req.url.match("\.css$")) {
     var cssPath = path.join(__dirname, 'public', req.url);
     var fileStream = fs.createReadStream(cssPath, "UTF-8");
-    res.writeHead(200, { "Content-Type": "text/css" }, headers);
+    res.writeHead(200, { "Content-Type": "text/css" });
     fileStream.pipe(res);
 
   } 
@@ -53,7 +47,6 @@ const server = http.createServer(function (req, res) {
         .collection("web");
       collection.find({}).toArray().then((ans) => {
         res.write(JSON.stringify(ans, null, 2));
-        res.writeHead(headers);
         res.end();
       });
     }).catch((err) => {

@@ -46,7 +46,6 @@ const server = http.createServer(function (req, res) {
     const databasename = "db01"; // Database name
     MongoClient.connect(url).then((client) => {
       const connect = client.db(databasename);
-      // Connect to collection
       const collection = connect
         .collection("web");
       collection.find({}).toArray().then((ans) => {

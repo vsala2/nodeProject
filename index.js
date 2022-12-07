@@ -6,7 +6,7 @@ const fs = require('fs');
 
 const cors =  require('cors');
 
-const PORT = 9595;
+const PORT = 8080;
 
 const { MongoClient } = require('mongodb');
 
@@ -59,7 +59,7 @@ const server = http.createServer(function (req, res) {
   }
   else{
     
-    res.end("<h1> 404: Nothing is Here</h1>");
+    res.end(" 404: Nothing is Here");
   }
 });
 

@@ -47,6 +47,7 @@ const server = http.createServer(function (req, res) {
         .collection("web");
       collection.find({}).toArray().then((ans) => {
         res.write(JSON.stringify(ans, null, 2));
+        res.header('Access-Control-Allow-Origin', '*');
         res.end();
       });
     }).catch((err) => {

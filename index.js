@@ -4,13 +4,9 @@ const http = require('http');
 
 const fs = require('fs');
 
-const cors =  require('cors');
-
 const PORT = 8080;
 
 const { MongoClient } = require('mongodb');
-
-app.use(cors());
 
 const server = http.createServer(function (req, res) {
   console.log("Request for demo file received.", req.url);

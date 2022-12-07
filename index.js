@@ -53,7 +53,7 @@ const server = http.createServer(function (req, res) {
         .collection("web");
       collection.find({}).toArray().then((ans) => {
         res.write(JSON.stringify(ans, null, 2));
-        res.writeHead(200, headers);
+        res.writeHead(headers);
         res.end();
       });
     }).catch((err) => {

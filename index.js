@@ -61,5 +61,5 @@ const server = http.createServer(function (req, res) {
 
 
 server.listen(PORT);
-console.log('Server running at {{PORT}}');
+console.log(`Great our server is running on port ${PORT} `);
 

@@ -52,7 +52,8 @@ const server = http.createServer(function (req, res) {
       const collection = connect
         .collection("web");
       collection.find({}).toArray().then((ans) => {
-        res.write(JSON.stringify(ans, null, 2), headers);
+        res.write(JSON.stringify(ans, null, 2));
+        res.writeHead(200, headers);
         res.end();
       });
     }).catch((err) => {
